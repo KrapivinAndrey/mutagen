@@ -41,3 +41,9 @@ jobs:
 
       - name: Мутанты
         run: oscript ./tasks/mutant.os
+
+      - name: Артефакты сборки
+        uses: actions/upload-artifact@v3
+        with:
+          name: survived-mutants
+          path: build/*.os
