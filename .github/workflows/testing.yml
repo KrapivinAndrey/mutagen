@@ -40,7 +40,7 @@ jobs:
         run: oscript ./tasks/test.os
 
       - name: Мутанты
-        run: oscript /src/main.os run ./mutagen.json
+        run: oscript ./src/main.os run ./mutagen.json
 
       - name: Артефакты сборки
         uses: actions/upload-artifact@v3
