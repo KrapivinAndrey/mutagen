@@ -1,5 +1,5 @@
 ﻿{
-    "run": "tasks\\test.os",
-    "src": "src\\Мутанты",
+    "task": "tasks\\test.os",
+    "src": "src\\Мутанты\\",
     "survivors": "build\\mutants"
 }
