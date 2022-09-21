@@ -1,5 +1,6 @@
 ﻿{
     "task": "tasks/test.os",
     "src": "src/Мутанты/",
-    "survivors": "build/mutants"
+    "survivors": "build/mutants",
+    "msi": 70
 }
