@@ -2,5 +2,5 @@
     "task": "tasks/test.os",
     "src": "src/Мутанты/",
     "survivors": "build/mutants",
-    "msi": 70
+    "msi": 20
 }
