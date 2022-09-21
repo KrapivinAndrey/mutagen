@@ -41,7 +41,7 @@ jobs:
 
       - name: Мутанты
         run: |
-          set SET LOGOS_LEVEL=DEBUG
+          set LOGOS_LEVEL=DEBUG
           oscript ./src/main.os run ./mutagen.json
 
       - name: Артефакты сборки
