@@ -40,7 +40,9 @@ jobs:
         run: oscript ./tasks/test.os
 
       - name: Мутанты
-        run: oscript ./tasks/mutant.os
+        run: |
+          set LOGOS_LEVEL=DEBUG
+          oscript ./src/main.os run ./mutagen.json
 
       - name: Артефакты сборки
         uses: actions/upload-artifact@v3
