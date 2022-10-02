@@ -42,7 +42,7 @@ jobs:
       - name: Мутанты
         run: |
           set LOGOS_LEVEL=DEBUG
-          mutagen run ./mutagen.json
+          oscript src/main.os run ./mutagen.json
 
       - name: Артефакты сборки
         uses: actions/upload-artifact@v3
