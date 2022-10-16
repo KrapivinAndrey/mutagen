@@ -56,20 +56,3 @@ jobs:
         run: opm push -f ./${{ matrix.package_mask }} --token ${{ env.TOKEN }} -c stable
         env:
           TOKEN: ${{ secrets.OSHUB_TOKEN }}
-
-      - name: Сборка пакета exe 
-        run: |
-          opm run pack
-          opm run make
-
-      - name: Заливка артифактов
-        uses: actions/upload-artifact@v2
-        with:
-          name: mutagen.exe.zip
-          path: ./bin/${{ matrix.package_exe_mask }}
-      
-      - name: Заливка в релиз exe
-        uses: AButler/upload-release-assets@v1.0
-        with:
-          files: ./bin/${{ matrix.package_exe_mask }}
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
